@@ -159,3 +159,76 @@ img { max-width: 100%; height: auto; display: block; }
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================================
+   詳細ページ用 (detail.html)
+   ========================================================= */
+
+/* パンくずリスト */
+.breadcrumb { margin-bottom: 20px; }
+.breadcrumb a { color: var(--primary-color); font-weight: bold; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* タイトル */
+.project-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* 上部（画像と基本情報）のレイアウト */
+.detail-top {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.main-image { flex: 2; }
+.info-table { flex: 1; }
+
+/* 基本情報テーブル */
+.info-table h2 { font-size: 1.2rem; margin-top: 0; }
+.info-table dl { display: flex; flex-wrap: wrap; line-height: 1.6; }
+.info-table dt { width: 30%; font-weight: bold; color: var(--primary-color); margin-bottom: 10px; }
+.info-table dd { width: 70%; margin: 0 0 10px 0; }
+
+.external-link {
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* アピールセクション */
+.appeal-section h2 {
+    font-size: 1.4rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.appeal-section p { line-height: 1.8; margin-bottom: 20px; }
+.appeal-section ul { line-height: 1.8; padding-left: 20px; }
+.appeal-section li { margin-bottom: 15px; }
+
+/* 補足画像（横並び） */
+.sub-images {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+}
+.sub-images img { flex: 1; border: 1px solid #ccc; }
+
+/* スマホ対応（縦並びに変更） */
+@media screen and (max-width: 768px) {
+    .detail-top { flex-direction: column; }
+    .info-table dl { display: block; }
+    .info-table dt { width: 100%; }
+    .info-table dd { width: 100%; margin-bottom: 15px; }
+    .sub-images { flex-direction: column; }
+}
