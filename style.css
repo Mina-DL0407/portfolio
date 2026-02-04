@@ -105,6 +105,9 @@ img { max-width: 100%; height: auto; display: block; }
 .work-card {
     display: block;
     transition: transform 0.2s;
+
+    width: 85%;      /* 85%くらいのサイズにする */
+    margin: 0 auto;
 }
 
 .work-card:hover {
@@ -112,8 +115,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .thumbnail {
-    background-color: var(--primary-color);
-    aspect-ratio: 16 / 9;
+    background-color: var(--bg-color);
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     border: 1px solid #333; /* 画像の枠線 */
 }
