@@ -240,5 +240,5 @@ img { max-width: 100%; height: auto; display: block; }
     .info-table dl { display: block; }
     .info-table dt { width: 100%; }
     .info-table dd { width: 100%; margin-bottom: 15px; }
-    .sub-images { flex-direction: column; }
+    .sub-images { grid-template-columns: 1fr; }
 }
