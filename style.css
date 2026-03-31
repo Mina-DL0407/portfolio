@@ -242,3 +242,31 @@ img { max-width: 100%; height: auto; display: block; }
     .info-table dd { width: 100%; margin-bottom: 15px; }
     .sub-images { grid-template-columns: 1fr; }
 }
+
+/* =========================================================
+   画像をたくさん並べるためのギャラリー (多目的用)
+   ========================================================= */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 幅300px以上の画像を敷き詰める */
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.image-gallery figure {
+    margin: 0;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.image-gallery figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
