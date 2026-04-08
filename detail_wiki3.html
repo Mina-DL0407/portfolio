@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品タイトル｜ポートフォリオ</title>
+    <title>何屋未来 非公式wiki｜ポートフォリオ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,23 +22,23 @@
             </div>
 
             <article class="project-detail">
-                <h1 class="project-title">作品タイトル（例：ゲーム名、ツール名）</h1>
+                <h1 class="project-title">何屋未来　非公式wiki</h1>
                 
                 <div class="detail-top">
                     <div class="main-image">
-                        <img src="https://placehold.jp/169/24648c/ffffff/800x450.png?text=作品のメイン画像" alt="作品画像">
+                        <img src="images/nny_wiki_top.png" alt="作品画像">
                     </div>
                     
                     <div class="info-table">
                         <h2>基本情報</h2>
                         <dl>
-                            <dt>制作時期</dt><dd>大学〇年〇月（制作期間：〇週間）</dd>
-                            <dt>役割</dt><dd>個人制作 / 〇人チーム（担当：リーダー、〇〇実装）</dd>
-                            <dt>使用ツール</dt><dd>Unity, C++, Git, HTML/CSS</dd>
+                            <dt>制作時期</dt><dd>大学1年11月～現在</dd>
+                            <dt>役割</dt><dd>立ち上げ、管理、編集</dd>
+                            <dt>使用ツール</dt><dd>WikiWiki、付属マークアップ言語</dd>
                             <dt>リンク</dt>
                             <dd>
-                                <a href="#" target="_blank" class="external-link">GitHub</a> / 
-                                <a href="#" target="_blank" class="external-link">実際に遊ぶ・見る</a>
+                                <a href="https://wikiwiki.jp/naniya_mirai/" target="_blank" class="external-link">Wikiページ</a>
+                                <!-- <a href="#" target="_blank" class="external-link">実際に遊ぶ・見る</a> -->
                             </dd>
                         </dl>
                     </div>
@@ -46,22 +46,49 @@
 
                 <div class="appeal-section">
                     <h2>制作のきっかけ</h2>
-                    <p>「自分や友人が〇〇で困っていたから作った」「こういうシステムを試してみたかった」など、開発の動機を書きます。</p>
+                    <p>
+                        これまでwikiはゲームに付随するものだという考え方をもってきましたが、大手VTuber事務所の非公式wikiが良質なファンコミュニティとして機能していることを知って、ゲーム以外のwikiの有用性に気付きました。<br>
+                        そこで、私自身が推している個人配信者「何屋未来」氏の非公式情報wikiを設立し、複数のリスナーと共に日々編集に励んでいます。
+                    </p>
 
                     <h2>こだわった点・工夫した点</h2>
                     <ul>
-                        <li><strong>見出し1：</strong> 具体的にどんな技術的工夫、プランニングの工夫をしたか。</li>
-                        <li><strong>見出し2：</strong> ユーザー目線で配慮した点や、UI/UXの改善。</li>
-                        <li><strong>見出し3：</strong> チーム開発でコミュニティや円滑な進行のために貢献したこと。</li>
+                        <li><strong>物量には技術で対抗</strong></li>
+                        <p>
+                            Wikiの目玉コンテンツとして、「すべての動画・配信・Shortsのまとめページ」は必要だろうと考えました。<br>
+                            しかし、その時点で何屋未来氏の活動は2年以上にわたっており、動画数は手作業でまとめるにはあまりにも多すぎました。そこで私は、APIを活用した自動化に着目しました。
+                        </p>
+                        <li><strong>生成AIの力を借りたAPI呼び出し</strong></li>
+                        <p>
+                            自動化を思いついたはいいものの、APIに関しての知識には乏しく、自力での実装には多大な労力を要すことが予想されました。<br>
+                            そこで、ChatGPTを活用し、要件定義とコーディングのサポートを受けながら、YouTube Data APIを呼び出すPythonスクリプトを記述しました。<br>
+                            チャンネルの全動画データを自動取得してExcelに出力し、さらにExcel上で「UTCからJSTへの時刻変換」や「文字列結合を用いたWikiの表組み構文への変換」を行う関数を組みました。<br>
+                            これにより、「ExcelのデータをコピペするだけでWikiのページが完成する」という状態を作り出し、手作業では終わりの見えない物量を数分で処理することに成功しました。
+                        </p>
                     </ul>
 
-                    <div class="sub-images">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=工夫した部分のスクショ" alt="補足画像">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=コード等のスクショ" alt="補足画像">
+                    <h3>▼ 実際のスクリプトとWikiの画面</h3>
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="images/nny_wiki_excel.png" alt="スクリプト画面">
+                            <figcaption>APIを利用して自動生成・加工したデータ</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/nny_wiki_videos.png" alt="Wikiの動画まとめ">
+                            <figcaption>自動化によって構築された動画まとめページ</figcaption>
+                        </figure>
                     </div>
 
+                    <h2>今後の課題・展望</h2>
+                    <p>
+                        現在、動画の種別（通常動画 / 配信 / Shorts）については手動で入力していますが、何屋未来氏が配信には🔴マークを、Shortsには#Shortsという文字列を入れていることを活かして、タイトルの文字列を検出し、Excel上で種別まで自動入力させる改善を検討しています。
+                    </p>
+
                     <h2>振り返り・学び</h2>
-                    <p>この開発を通じて得られた技術的・人間的な学びや、次に活かしたいことを書きます。</p>
+                    <p>
+                        好きなことに関する作業でも、物量には限界があることを知りました。<br>
+                        プログラマーに関してよく言われる「楽するために苦労する」を経験できたことは良いことだと考えています。
+                    </p>
                 </div>
 
             </article>
