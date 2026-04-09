@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品タイトル｜ポートフォリオ</title>
+    <title>音ゲー企画『Rhythm Palette』｜ポートフォリオ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,46 +22,91 @@
             </div>
 
             <article class="project-detail">
-                <h1 class="project-title">作品タイトル（例：ゲーム名、ツール名）</h1>
+                <h1 class="project-title">音ゲーの課題解決に挑んだ話</h1>
                 
                 <div class="detail-top">
                     <div class="main-image">
-                        <img src="https://placehold.jp/169/24648c/ffffff/800x450.png?text=作品のメイン画像" alt="作品画像">
+                        <img src="images/rhythmpalette_1.jpg" alt="作品画像">
                     </div>
                     
                     <div class="info-table">
                         <h2>基本情報</h2>
                         <dl>
-                            <dt>制作時期</dt><dd>大学〇年〇月（制作期間：〇週間）</dd>
-                            <dt>役割</dt><dd>個人制作 / 〇人チーム（担当：リーダー、〇〇実装）</dd>
-                            <dt>使用ツール</dt><dd>Unity, C++, Git, HTML/CSS</dd>
-                            <dt>リンク</dt>
-                            <dd>
-                                <a href="#" target="_blank" class="external-link">GitHub</a> / 
-                                <a href="#" target="_blank" class="external-link">実際に遊ぶ・見る</a>
-                            </dd>
+                            <dt>制作時期</dt><dd>大学2年</dd>
+                            <dt>役割</dt><dd>企画、リサーチ、資料作成</dd>
+                            <dt>使用ツール</dt><dd>PowerPoint、Bing image creator</dd>
+                            <dt>成果物</dt><dd>企画書（7ページ）</dd>
                         </dl>
                     </div>
                 </div>
 
                 <div class="appeal-section">
                     <h2>制作のきっかけ</h2>
-                    <p>「自分や友人が〇〇で困っていたから作った」「こういうシステムを試してみたかった」など、開発の動機を書きます。</p>
+                    <p>
+                        大学2年の授業で、「実現性に関係なく、今温めているアイデアを企画書にまとめる」課題が出ました。<br>
+                        私は音楽ゲームに長年触れてきた身として、音楽ゲーム(特にスマホ媒体)の大きな課題である「見たまま押す」問題にメスを入れることを試みました。<br>
+                    </p>
+
+                    <h2>「見たまま押す」問題とは？</h2>
+                    <p>
+                        この課題で取り上げた「見たまま押す」問題とは、音楽ゲームが音に合わせて手などを動かすゲームから、流れてきたノーツを視認してその通り操作するだけのゲームへと変化してしまっている問題のことです。<br>
+                        特にスマホでプレイする音ゲーは、ノーツが流れてきた場所を押す/フリックすることに終始し、音が無くても見れば大体分かるという状態に陥っています。<br>
+                        これを問題と認識して解決した、「天国」と名の付く作品が既に有名になっていますが、それ以外の視点で切り込めないか思案しました。<br>
+                    </p>
 
                     <h2>こだわった点・工夫した点</h2>
                     <ul>
-                        <li><strong>見出し1：</strong> 具体的にどんな技術的工夫、プランニングの工夫をしたか。</li>
-                        <li><strong>見出し2：</strong> ユーザー目線で配慮した点や、UI/UXの改善。</li>
-                        <li><strong>見出し3：</strong> チーム開発でコミュニティや円滑な進行のために貢献したこと。</li>
+                        <li><strong>「見えた場所」と「押す場所」が違ったらどうか</strong></li>
+                        <p>
+                            「見たまま押す」への対策として、流れてきたノーツを見たまま押すとミスになるシステムを考案しました。<br>
+                            ノーツの流れてくる場所をそのまま押しても反応せず、ノーツの情報をよく見て判断する必要があるシステムです。<br>
+                            これにより、流れてきたノーツをそのまま押せばいいという音楽ゲームの常識を切り崩すことができないかと考えました。
+                        </p>
+                        <li><strong>何を使って「押す場所」を示すか</strong></li>
+                        <p>
+                            ノーツに搭載する情報として、最も分かりやすいものは「色」でしょう。<br>
+                            ノーツに数字などを記載しても、もしそれが高速で流れてきた場合視認できず、覚えるステップを必要としてしまいます。<br>
+                            とある和太鼓リズムゲームでも、色を使って叩く位置を示しているため、これが最良であると考えました。
+                        </p>
+                        <li><strong>誰もが遊べるゲームのために必要なこと</strong></li>
+                        <p>
+                            ところが、色を情報として持たせると、その情報を正しく認識できない場合があります。色覚特性の存在です。<br>
+                            そこで、カラーユニバーサルデザインについて深いリサーチを行い、推奨色でまとめる工夫をしました。<br>
+                            このゲームは企画書段階で止まっていますが、本制作を行う場合は明度の似通った色を隣り合わせないような譜面作成にも注意を払いたいと考えています。
+                        </p>
                     </ul>
 
-                    <div class="sub-images">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=工夫した部分のスクショ" alt="補足画像">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=コード等のスクショ" alt="補足画像">
+                    <h3>▼ 企画書</h3>
+                    <div class="vertical-gallery">
+                        <figure>
+                            <img src="images/rhythmpalette_1.jpg" alt="企画書1">
+                        </figure>
+                        <figure>
+                            <img src="images/rhythmpalette_2.jpg" alt="企画書2">
+                        </figure>
+                        <figure>
+                            <img src="images/rhythmpalette_3.jpg" alt="企画書3">
+                        </figure>
+                        <figure>
+                            <img src="images/rhythmpalette_4.jpg" alt="企画書4">
+                        </figure>
+                        <figure>
+                            <img src="images/rhythmpalette_5.jpg" alt="企画書5">
+                        </figure>
+                        <figure>
+                            <img src="images/rhythmpalette_6.jpg" alt="企画書6">
+                        </figure>
+                        <figure>
+                            <img src="images/rhythmpalette_7.jpg" alt="企画書7">
+                        </figure>
                     </div>
 
                     <h2>振り返り・学び</h2>
-                    <p>この開発を通じて得られた技術的・人間的な学びや、次に活かしたいことを書きます。</p>
+                    <p>
+                        企画書をまとめた後、分析を行いました。その結果、このゲームは目的達成の手段として不適当だと判断しました。<br>
+                        理由として、この企画は「色の認識」という処理を一つ増やしただけで、本質的な「見えた→考える→押す」というプロセス自体に変わりはありません。これは「見たまま押す」という課題への表面的な対策であり、問題の根本的な解決（例えば、音楽を体感すること）にはなっていないのではないかと考えたからです。<br>
+                        この企画を通して、既存の課題解決の難しさを実感しました。
+                    </p>
                 </div>
 
             </article>
