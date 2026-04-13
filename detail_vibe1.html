@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品タイトル｜ポートフォリオ</title>
+    <title>滑らかに回転するテトリス｜ポートフォリオ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,23 +23,22 @@
             </div>
 
             <article class="project-detail">
-                <h1 class="project-title">作品タイトル（例：ゲーム名、ツール名）</h1>
+                <h1 class="project-title">テトリスの回転を滑らかにしてみた話</h1>
                 
                 <div class="detail-top">
                     <div class="main-image">
-                        <img src="https://placehold.jp/169/24648c/ffffff/800x450.png?text=作品のメイン画像" alt="作品画像">
+                        <img src="images/tetris_smooth.png" alt="作品画像">
                     </div>
                     
                     <div class="info-table">
                         <h2>基本情報</h2>
                         <dl>
-                            <dt>制作時期</dt><dd>大学〇年〇月（制作期間：〇週間）</dd>
-                            <dt>役割</dt><dd>個人制作 / 〇人チーム（担当：リーダー、〇〇実装）</dd>
-                            <dt>使用ツール</dt><dd>Unity, C++, Git, HTML/CSS</dd>
+                            <dt>制作時期</dt><dd>大学3年9月</dd>
+                            <dt>役割</dt><dd>個人制作（バイブコーディング）</dd>
+                            <dt>使用ツール</dt><dd>C++、DXライブラリ、Gemini Pro 2.5</dd>
                             <dt>リンク</dt>
                             <dd>
-                                <a href="#" target="_blank" class="external-link">GitHub</a> / 
-                                <a href="#" target="_blank" class="external-link">実際に遊ぶ・見る</a>
+                                <a href="https://www.youtube.com/shorts/zO4z_9YrWTY" target="_blank" class="external-link">投稿動画</a>
                             </dd>
                         </dl>
                     </div>
@@ -47,22 +46,36 @@
 
                 <div class="appeal-section">
                     <h2>制作のきっかけ</h2>
-                    <p>「自分や友人が〇〇で困っていたから作った」「こういうシステムを試してみたかった」など、開発の動機を書きます。</p>
+                    <p>
+                        生成AIを活用してコードを書く「バイブコーディング」の練習として、以前から構想していたアイデアの実現に取り組みました。<br>
+                        従来のテトリスにおける「T-spin（回転入れ）」などのテクニックは、ブロックが一瞬でワープするように回転するため、私を含めた初心者には直感的に理解しづらいだろうと感じていました。そこで、ブロックの回転処理にアニメーションを加え、滑らかな描画に変更したらどうなるか？という実験を企画しました。
+                    </p>
 
-                    <h2>こだわった点・工夫した点</h2>
+                    <h2>結果</h2>
                     <ul>
-                        <li><strong>見出し1：</strong> 具体的にどんな技術的工夫、プランニングの工夫をしたか。</li>
-                        <li><strong>見出し2：</strong> ユーザー目線で配慮した点や、UI/UXの改善。</li>
-                        <li><strong>見出し3：</strong> チーム開発でコミュニティや円滑な進行のために貢献したこと。</li>
+                        <li><strong>認識のズレの解消</strong></li>
+                        <p>
+                            実際に滑らかに回転させてみた結果、ブロックがめり込みつつもコマンド入力した方向に視覚的に回転しながら隙間に入っていく様子が明確になり、私自身が抱えていた回転入れの認識ズレも見事に解消されました。
+                        </p>
+                        
+                        <li><strong>副産物としての「奇妙なプレイ感」</strong></li>
+                        <p>
+                            一方で、カクカク動くのが当たり前だったゲームが「ぬるっ」と動くことで、遊んでいてジワジワと笑いがこみ上げてくるような、独特なプレイ感が生まれました。これは実際にプロトタイプを触ってみて初めて得られた発見でした。
+                        </p>
                     </ul>
 
-                    <div class="sub-images">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=工夫した部分のスクショ" alt="補足画像">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=コード等のスクショ" alt="補足画像">
-                    </div>
+                    <h2>YouTube Shortsでの発信</h2>
+                    <p>
+                        プレイ感が視覚的にも面白いだろうと考えた私は、YouTube Shortsでの共有を画策しました。<br>
+                        DT砲と呼ばれる、T-spinが2回発生するプレイスタイルを録画して、流行りの音源とともに投稿したところ、1,200再生・6高評価を獲得し、一定のリアクションを得ることができました。<br>
+                        しかし、録画環境の都合で動画を30fpsに落としてしまったため、この企画の最大の魅力である「ぬるっとした滑らかな回転」の面白さが伝わりづらくなってしまいました。この経験から、ゲームの「コアな面白さ」を伝えるための見せ方にも工夫が必要だと痛感しました。
+                    </p>
 
                     <h2>振り返り・学び</h2>
-                    <p>この開発を通じて得られた技術的・人間的な学びや、次に活かしたいことを書きます。</p>
+                    <p>
+                        今回、他の課題との兼ね合いなどの時間的制約もあり、生成AIの出力に対して「動いたからヨシ」としてしまい、コードを深く読み込むことを怠ってしまいました。結果として、内部でどのような描画処理や衝突判定の計算が行われているかを完全に理解できていない状態に陥っています。<br>
+                        プログラマーとして、AIはあくまで強力な補助ツールであり、出力されたコードのロジックを理解し、自分の知識として吸収・制御できて初めて実務で活きるのだということを改めて再認識するきっかけになりました。
+                    </p>
                 </div>
 
             </article>

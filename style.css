@@ -307,3 +307,51 @@ img { max-width: 100%; height: auto; display: block; }
         max-width: 100%;
     }
 }
+
+
+/* wip用 */
+.wip-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.wip-text-main {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.wip-text-sub {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+
+.wip-image-container {
+    max-width: 400px; /* パソコンで見た時の最大サイズ */
+    margin: 0 auto 30px;
+}
+
+.wip-image-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 1:1を維持 */
+    object-fit: cover;
+    border-radius: 15px; /* 角を少し丸くすると柔らかい印象になります */
+    border: 1px solid #eee;
+}
+
+.wip-message {
+    line-height: 1.8;
+    color: #666;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+    .wip-text-main {
+        font-size: 2rem;
+    }
+    .wip-image-container {
+        max-width: 80%; /* スマホでは画面幅に合わせて縮小 */
+    }
+}
