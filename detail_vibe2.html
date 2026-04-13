@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品タイトル｜ポートフォリオ</title>
+    <title>パングラム補助ツール｜ポートフォリオ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,23 +23,23 @@
             </div>
 
             <article class="project-detail">
-                <h1 class="project-title">作品タイトル（例：ゲーム名、ツール名）</h1>
+                <h1 class="project-title">言葉遊び『パングラム』を補助するツールを作った話</h1>
                 
                 <div class="detail-top">
                     <div class="main-image">
-                        <img src="https://placehold.jp/169/24648c/ffffff/800x450.png?text=作品のメイン画像" alt="作品画像">
+                        <img src="images/pangram_help.png" alt="作品画像">
                     </div>
                     
                     <div class="info-table">
                         <h2>基本情報</h2>
                         <dl>
-                            <dt>制作時期</dt><dd>大学〇年〇月（制作期間：〇週間）</dd>
-                            <dt>役割</dt><dd>個人制作 / 〇人チーム（担当：リーダー、〇〇実装）</dd>
-                            <dt>使用ツール</dt><dd>Unity, C++, Git, HTML/CSS</dd>
+                            <dt>制作時期</dt><dd>大学3年10月</dd>
+                            <dt>役割</dt><dd>個人制作（バイブコーディング）</dd>
+                            <dt>使用ツール</dt><dd>HTML/CSS, JavaScript, Gemini Pro 2.5</dd>
                             <dt>リンク</dt>
                             <dd>
-                                <a href="#" target="_blank" class="external-link">GitHub</a> / 
-                                <a href="#" target="_blank" class="external-link">実際に遊ぶ・見る</a>
+                                <a href="https://github.com/C-phit/pangram-help" target="_blank" class="external-link">GitHub</a> / 
+                                <a href="https://c-phit.github.io/pangram-help/" target="_blank" class="external-link">ツール</a>
                             </dd>
                         </dl>
                     </div>
@@ -47,22 +47,39 @@
 
                 <div class="appeal-section">
                     <h2>制作のきっかけ</h2>
-                    <p>「自分や友人が〇〇で困っていたから作った」「こういうシステムを試してみたかった」など、開発の動機を書きます。</p>
+                    <p>
+                        言葉遊びコミュニティ『ピーコロン』で1年半ほど活動してきた中で、印象に残りやすいメンバーを見て「自分もこうなりたい」と思うようになりました。<br>
+                        しかし、今すぐセンスのいい言葉遊びや高難易度の言葉遊びに挑戦したところで、まともにできないであろうことは火を見るよりも明らかでした。そこで、「ツール開発」という視点に着目します。<br>
+                        AIによるバイブコーディングを活用して「パングラム」という言葉遊びの補助ツールを作ったところ、高い評価を得ることに成功しました。
+                    </p>
+
+                    <h2>「パングラム」とは？</h2>
+                    <p>
+                        ここで、パングラムとは何か解説します。パングラムという単語を初めて目にする方も多いことでしょう。<br>
+                        「いろはにほへと」から始まる有名な文は、皆さんご存知ですね？　あの文は、日本語の仮名文字を47文字(ん除外、ゐゑ有)被りなく使用して作られた文です。<br>
+                        このように、仮名文字46文字を全て同じ回数だけ使って文を作る遊びのことをパングラムというのです。<br>
+                        この言葉遊びで補助すべき部分は、「超過/不足して使用されている文字の機械的判定」だと考え、このツールを作るに至りました。
+                    </p>
 
                     <h2>こだわった点・工夫した点</h2>
                     <ul>
-                        <li><strong>見出し1：</strong> 具体的にどんな技術的工夫、プランニングの工夫をしたか。</li>
-                        <li><strong>見出し2：</strong> ユーザー目線で配慮した点や、UI/UXの改善。</li>
-                        <li><strong>見出し3：</strong> チーム開発でコミュニティや円滑な進行のために貢献したこと。</li>
+                        <li><strong>ピーコロンユーザーのストイックな言葉遊びに応える</strong></li>
+                        <p>
+                            『ピーコロン』のユーザーは言葉遊びに対して非常にストイックです。そのため、単なる文字カウントツールではなく、高度な縛りプレイを含めた多様なプレイスタイルに対応できるよう、設定項目を細かくしました。
+                        </p>
                     </ul>
 
                     <div class="sub-images">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=工夫した部分のスクショ" alt="補足画像">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=コード等のスクショ" alt="補足画像">
+                        <img src="images/pangram_setting.png" alt="補足画像">
                     </div>
 
-                    <h2>振り返り・学び</h2>
-                    <p>この開発を通じて得られた技術的・人間的な学びや、次に活かしたいことを書きます。</p>
+                    <h2>その後の運用 / 振り返り・学び</h2>
+                    <p>
+                        リリース後、ユーザーから「長音記号が入力できない」というフィードバックを得ました。<br>
+                        原因は文章入力エリアの正規表現を「ひらがな、スペース、改行コードのみ」に縛ったことで、記号扱いされた長音が弾かれたものでした。このバグを修正したアップデートの後には、不具合報告やバッドレビューの無い状態で運用できています。<br><br>
+                        今回の開発で、ユーザーのニーズになりそうなものを見つけてすぐに叶えられるAI開発の高速性の恩恵を強く感じました。<br>
+                        その一方で、「正規表現のエッジケース（長音符など）」といったAIが見落としがちな仕様の穴は、最終的に人間のディレクションとテストでカバーしなければならないという、実運用ならではの教訓を得ることができました。
+                    </p>
                 </div>
 
             </article>
