@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品タイトル｜ポートフォリオ</title>
+    <title>Me:Log｜ポートフォリオ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,46 +23,59 @@
             </div>
 
             <article class="project-detail">
-                <h1 class="project-title">作品タイトル（例：ゲーム名、ツール名）</h1>
+                <h1 class="project-title">ゲーム依存症軽減に挑戦！　日記アプリ『Me:Log』</h1>
                 
                 <div class="detail-top">
                     <div class="main-image">
-                        <img src="https://placehold.jp/169/24648c/ffffff/800x450.png?text=作品のメイン画像" alt="作品画像">
+                        <img src="images/melog.png" alt="作品画像">
                     </div>
                     
                     <div class="info-table">
                         <h2>基本情報</h2>
                         <dl>
-                            <dt>制作時期</dt><dd>大学〇年〇月（制作期間：〇週間）</dd>
-                            <dt>役割</dt><dd>個人制作 / 〇人チーム（担当：リーダー、〇〇実装）</dd>
-                            <dt>使用ツール</dt><dd>Unity, C++, Git, HTML/CSS</dd>
-                            <dt>リンク</dt>
-                            <dd>
-                                <a href="#" target="_blank" class="external-link">GitHub</a> / 
-                                <a href="#" target="_blank" class="external-link">実際に遊ぶ・見る</a>
-                            </dd>
+                            <dt>制作時期</dt><dd>大学3年6～1月</dd>
+                            <dt>役割</dt><dd>6人チーム（担当：ディレクター、バックエンド実装）</dd>
+                            <dt>使用ツール</dt><dd>Flutter, Dart, Firebase, Gemini API</dd>
+                            <dt>テーマ</dt><dd>ゲーム依存症をゲーミフィケーションで対策（大学実習課題）</dd>
                         </dl>
                     </div>
                 </div>
 
                 <div class="appeal-section">
                     <h2>制作のきっかけ</h2>
-                    <p>「自分や友人が〇〇で困っていたから作った」「こういうシステムを試してみたかった」など、開発の動機を書きます。</p>
+                    <p>
+                        大学の実習科目にて、「ゲーム依存症をゲームで軽減・啓蒙する」というお題が与えられました。初期は既存の対策ゲームを参考に3つの企画を提案したものの、企画プレゼンテーションで全てボツに。<br>
+                        ゲーム/ゲーミフィケーションの活用の難しさを痛感しつつも、一からやり直して日記帳アプリに辿り着きました。
+                    </p>
 
                     <h2>こだわった点・工夫した点</h2>
                     <ul>
-                        <li><strong>見出し1：</strong> 具体的にどんな技術的工夫、プランニングの工夫をしたか。</li>
-                        <li><strong>見出し2：</strong> ユーザー目線で配慮した点や、UI/UXの改善。</li>
-                        <li><strong>見出し3：</strong> チーム開発でコミュニティや円滑な進行のために貢献したこと。</li>
+                        <li><strong>寝る前の5分で終わるUI/UX</strong></li>
+                        <p>
+                            日記アプリの最大の壁である「継続率」を上げるため、徹底的に入力コストを抑えた設計にしました。その日の気分や睡眠時間、そしてゲームの成績を直感的に記録できるようにしています。これで、ゲーマーがオンラインマッチングを待ったりゲームを終わらせて入眠する前の短時間で書ける日記が出来上がりました。
+                        </p>
+                        <li><strong>AIフィードバックの実装</strong></li>
+                        <p>
+                            記録された「生活習慣データ」と「ゲームの成績データ」をGemini APIに分析させ、プレイヤーに対してフィードバックを行う機能を実装しました。<br>
+                            生活習慣とゲーム成績を関連付けたアドバイスをすることで、生活習慣の改善を行う目的に「ゲームの上達・コンディション改善」を入れ込む工夫をしました。
+                        </p>
+                        <li><strong>対立の多いチーム内での立ち回り</strong></li>
+                        <p>
+                            私のチームでは開発中や新機能の会議での対立が絶えず、大きな喧嘩に発展することも少なくありませんでした。<br>
+                            そのような状況では、あえて自分の意見を強く持たず、時に実習室外に出たりして双方の意見を中立的に聞き、解決に向けて動きました。
+                        </p>
                     </ul>
 
                     <div class="sub-images">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=工夫した部分のスクショ" alt="補足画像">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=コード等のスクショ" alt="補足画像">
+                        <img src="images/melog_top.png" alt="補足画像">
+                        <img src="images/melog_result.png" alt="補足画像">
                     </div>
 
                     <h2>振り返り・学び</h2>
-                    <p>この開発を通じて得られた技術的・人間的な学びや、次に活かしたいことを書きます。</p>
+                    <p>
+                        与えられたお題に正面から応えるものにはなりませんでしたが、「ゲームが上手くなりたい」というゲーマーの根源的欲求を原動力として生活習慣を改善させる良いアプリができたと自負しております。<br>
+                        また、チーム開発においては、チームが機能するために不足している役割（今回はバランサー）に自分がなるという、客観的な立ち回りの重要性を深く学びました。
+                    </p>
                 </div>
 
             </article>
