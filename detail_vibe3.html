@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordCube｜ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1>My Experience</h1>
+        <p>
+          <strong>皆川　柊汰</strong
+          ><br />東京国際工科専門職大学　工科学部デジタルエンタテインメント学科<br />ゲームプランナー
+          / プログラマー志望
+        </p>
+      </div>
+    </header>
+
+    <div class="container detail-container">
+      <main class="main-content">
+        <div class="breadcrumb">
+          <a href="index.html">← トップページに戻る</a>
+        </div>
+
+        <article class="project-detail">
+          <h1 class="project-title">3Dパズル言葉遊び『WordCube』を作った話</h1>
+
+          <div class="detail-top">
+            <div class="main-image">
+              <img src="images/wordcube_title.png" alt="作品画像" />
+            </div>
+
+            <div class="info-table">
+              <h2>基本情報</h2>
+              <dl>
+                <dt>制作時期</dt>
+                <dd>大学4年6月</dd>
+                <dt>役割</dt>
+                <dd>個人制作（バイブコーディング）</dd>
+                <dt>使用ツール</dt>
+                <dd>HTML/CSS, JavaScript, Gemini Pro 2.5</dd>
+                <dt>リンク</dt>
+                <dd>
+                  <a
+                    href="https://github.com/C-phit/wordcube"
+                    target="_blank"
+                    class="external-link"
+                    >GitHub</a
+                  >
+                  /
+                  <a
+                    href="https://c-phit.github.io/wordcube/"
+                    target="_blank"
+                    class="external-link"
+                    >ツール</a
+                  >
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="appeal-section">
+            <h2>制作のきっかけ</h2>
+            <p>
+              言葉遊びコミュニティ『ピーコロン』で行われた3周年記念イベントで、「ランダムに選ばれた9文字を3×3に組み合わせ、縦横6列に意味の通る言葉を作る」というお題が出ました。<br />
+              私自身は他のお題に関わっていたのでこれ自体には参加していないのですが、解決後に「今度は3Dで27列にやらせるのではないか」という、恐らく冗談半分の投稿が飛び出しました。<br />
+              どうも面白そうだと感じた私は、持ち前のバイブコーディングによる高速プロトタイピングで、3D化プロトタイプを作ることにしました。
+            </p>
+
+            <h2>こだわった点・工夫した点</h2>
+            <ul>
+              <li>
+                <strong
+                  >ピーコロンユーザーのストイックな言葉遊びに応える</strong
+                >
+              </li>
+              <p>
+                『ピーコロン』のユーザーは言葉遊びに対して非常にストイックです。そのため、単なる文字入れパズルキューブではなく、高度な縛りプレイを含めた多様なプレイスタイルに対応できるよう、設定項目を細かくしました。<br />
+                具体的には、ランダム排出される文字の被りを許容するか否か、ランダム排出される文字がカタカナか常用漢字か、などの設定を用意しました。また、ランダム排出ではなく、任意の文字を入力して遊ぶことも可能として、「この配置なら実現できるよね！」の図示にも役立ててもらうことを想定しました。
+              </p>
+            </ul>
+
+            <div class="image-gallery">
+              <figure>
+                <img src="images/wordcube_screen.png" alt="補足画像" />
+                <figcaption>
+                  ドラッグアンドドロップで文字を配置。スライス表示にも対応
+                </figcaption>
+              </figure>
+            </div>
+
+            <h2>振り返り・学び</h2>
+            <p>
+              「1時間で開発してやる」と息巻いた本制作でしたが、イベントの最中に隙間時間で進めたこともあり、結局開発には5時間を要すこととなりました。<br />
+              その頃にはすっかり熱狂も冷めており、ユーザーの目に留まることはそれほどありませんでした。<br />
+              また、プレイ自体の高難易度さも相まって、挑戦の表明は出ましたがクリア報告は上がっていません。<br />
+              設計を細かく詰めすぎたかなと考えていますので、次回は早々に作り始めながら、気になった点を随時改善していく、というスタイルで開発を高速化していきたいです。
+            </p>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
