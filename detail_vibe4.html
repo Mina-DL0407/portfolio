@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAWソフト｜ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <h1>My Experience</h1>
+        <p>
+          <strong>皆川　柊汰</strong
+          ><br />東京国際工科専門職大学　工科学部デジタルエンタテインメント学科<br />ゲームプランナー
+          / プログラマー志望
+        </p>
+      </div>
+    </header>
+
+    <div class="container detail-container">
+      <main class="main-content">
+        <div class="breadcrumb">
+          <a href="index.html">← トップページに戻る</a>
+        </div>
+
+        <article class="project-detail">
+          <h1 class="project-title">
+            パワプロの作曲機能が不便だから、DAWソフトを作る。
+          </h1>
+
+          <div class="detail-top">
+            <div class="main-image">
+              <img src="images/powerproDAW_roll.png" alt="作品画像" />
+            </div>
+
+            <div class="info-table">
+              <h2>基本情報</h2>
+              <dl>
+                <dt>制作時期</dt>
+                <dd>大学4年6月～7月（制作期間：計4日）</dd>
+                <dt>役割</dt>
+                <dd>個人制作</dd>
+                <dt>使用ツール</dt>
+                <dd>C++, DXライブラリ, Gemini 3.1 Pro, Audacity</dd>
+                <dt>リンク</dt>
+                <dd>
+                  <!-- <a href="#" target="_blank" class="external-link"
+                    >実際に遊ぶ・見る</a
+                  > -->
+                  未公開
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="appeal-section">
+            <h2>制作のきっかけ</h2>
+            <p>
+              『eBASEBALL パワフルプロ野球』シリーズ(以下:
+              パワプロ)には、応援曲作成という機能が搭載されています。これはDTMのように好きな曲を打ち込み、登録できる機能です。<br />
+              これ自体は素晴らしい機能なのですが、ゲーム機のコントローラーで操作することを前提とするため操作の快適性に欠け、同機能上で試行錯誤を繰り返すには時間がかかりすぎる欠点がありました。<br />
+              そこで、応援曲作成の下書きを目的とするDAWを開発しようと思い至りました。
+            </p>
+
+            <h2>こだわった点・工夫した点</h2>
+            <ul>
+              <li>
+                <strong>「市販のDAWじゃいけない理由」になる</strong>
+                <p>
+                  勿論、市販のDAWをカスタムして使うこともできたでしょう。今でこそDAWの間口がやや狭まっていますが、少し前はCakewalkもStudio
+                  Oneも無料版を配布していました。<br />
+                  しかし、これらではいけない理由として、「パワプロ独自の制約」があります。音域に始まり、和音を作れない、56小節以内、トラック数は2以内…<br />
+                  これらは、市販のDAWソフトではデフォルトで制限がもっと広いものばかり。意識して作れば良いかもしれませんが、「うっかりしていて制約外のことをしてしまった」ということも頻発が予想されます。<br />
+                  それならば、「パワプロ独自の制約を守った環境で開発できるDAWソフト」があれば最も安心して作れると考え、パワプロの応援曲作成に課せられる制約を可能な限りソフトに落とし込みました。
+                </p>
+              </li>
+              <li>
+                <strong>思わぬ落とし穴：音源選定</strong>
+                <p>
+                  正直なところ、このDAWを作り始める前は、「C++にも音源ライブラリくらいあるだろう」と思っていました。<br />
+                  ところが、音源選定からプロジェクトへの反映まで自分でやらなければならないことが判明し、音源選定に苦戦しました。<br />
+                  「F3～A5までの29音を全て網羅した、ビブラートのない、加工してプロジェクト内のファイルとして配布しても問題ない金管楽器の音源」という制約条件を満たすものはなかなか見つからなかったのです。<br />
+                  音源選定に2日を要し、見つけたのが『University of Iowa Musical
+                  Instrument Samples』でした。<br />
+                  これならいけると思った矢先、ダウンロードした中身がaiff形式であったことが判明し、Audacityを使ったカット・wav変換・ループポイント設定の作業にこれまた時間を要しました。<br />
+                  これが原因で、数時間で終わる予定だったDAW開発が、週末の休みを4日も潰すことになってしまいました。
+                </p>
+              </li>
+              <!-- <li>
+                <strong>見出し3：</strong>
+                <p>
+                  チーム開発でコミュニティや円滑な進行のために貢献したこと。
+                </p>
+              </li> -->
+            </ul>
+
+            <div class="sub-images">
+              <img src="images/powerproDAW_code.png" alt="補足画像" />
+              <img src="images/powerproDAW_roll.png" alt="補足画像" />
+            </div>
+
+            <h2>振り返り・学び</h2>
+            <p>
+              初めは、クオリティを出せたら配布して、フィードバックをもらいながら改良しようと考えていましたが、現時点で配布するには至っていません。<br />
+              理由として、「AIが絡んでいるからかかっても数時間だろう」と考えていたことがあります。今の素材の豊富さ、AIの開発速度の速さを実感する出来事があったこともあり、手作業で音源調整を行ったりする作業のことを考えず、開発期間を過小評価していました。<br />
+              将来的に実務でもAIを使うことになると思うので、開発期間の想定を正しく行えるようになりたいと考えさせられる経験でした。
+            </p>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
