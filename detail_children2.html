@@ -1,72 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品タイトル｜ポートフォリオ</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京大学ゲームジャム｜ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="header-inner">
-            <h1>ポートフォリオタイトル</h1>
-        </div>
+      <div class="header-inner">
+        <h1>My Experience</h1>
+        <p>
+          <strong>皆川　柊汰</strong
+          ><br />東京国際工科専門職大学　工科学部デジタルエンタテインメント学科<br />ゲームプランナー
+          / プログラマー志望
+        </p>
+      </div>
     </header>
 
     <div class="container detail-container">
-        <main class="main-content">
-            
-            <div class="breadcrumb">
-                <a href="index.html">← トップページに戻る</a>
+      <main class="main-content">
+        <div class="breadcrumb">
+          <a href="index.html">← トップページに戻る</a>
+        </div>
+
+        <article class="project-detail">
+          <h1 class="project-title">夏休み親子ゲームジャム2023@東京大学</h1>
+
+          <div class="detail-top">
+            <div class="main-image">
+              <img src="images/noimage_title.png" alt="作品画像" />
             </div>
 
-            <article class="project-detail">
-                <h1 class="project-title">作品タイトル（例：ゲーム名、ツール名）</h1>
-                
-                <div class="detail-top">
-                    <div class="main-image">
-                        <img src="https://placehold.jp/169/24648c/ffffff/800x450.png?text=作品のメイン画像" alt="作品画像">
-                    </div>
-                    
-                    <div class="info-table">
-                        <h2>基本情報</h2>
-                        <dl>
-                            <dt>制作時期</dt><dd>大学〇年〇月（制作期間：〇週間）</dd>
-                            <dt>役割</dt><dd>個人制作 / 〇人チーム（担当：リーダー、〇〇実装）</dd>
-                            <dt>使用ツール</dt><dd>Unity, C++, Git, HTML/CSS</dd>
-                            <dt>リンク</dt>
-                            <dd>
-                                <a href="#" target="_blank" class="external-link">GitHub</a> / 
-                                <a href="#" target="_blank" class="external-link">実際に遊ぶ・見る</a>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
+            <div class="info-table">
+              <h2>基本情報</h2>
+              <dl>
+                <dt>開催日</dt>
+                <dd>大学1年8月26,27日</dd>
+                <dt>役割</dt>
+                <dd>学生ファシリテーター</dd>
+                <dt>アーカイブ</dt>
+                <dd>
+                  <a
+                    href="https://openstudio-utokyo.com/archive/20230903-2088/"
+                    target="_blank"
+                    class="external-link"
+                    >情報学環オープンスタジオ</a
+                  ><br />
+                  <a
+                    href="https://ludixlab.net/ja/?p=2193"
+                    target="_blank"
+                    class="external-link"
+                    >情報学環 藤本研究室</a
+                  ><br />
+                  <a
+                    href="https://note.com/saikorojuku/n/na4cf700e768e"
+                    target="_blank"
+                    class="external-link"
+                    >Note</a
+                  >
+                </dd>
+              </dl>
+            </div>
+          </div>
 
-                <div class="appeal-section">
-                    <h2>制作のきっかけ</h2>
-                    <p>「自分や友人が〇〇で困っていたから作った」「こういうシステムを試してみたかった」など、開発の動機を書きます。</p>
+          <div class="appeal-section">
+            <h2>参加のきっかけ</h2>
+            <p>
+              大学の先生伝手に「東京大学でボードゲームをテーマにしたワークショップが開催される」という情報を頂きました。<br />
+              子どもと触れ合った経験もあり、ボードゲームにも親しんできた私は、絶好の機会だと思い、参加を決意しました。<br />
+              進行アシスタントとして東大内外から学生6人が集められていましたが、当時1年生だった私を除いては皆さん学部4年生や院生の方々ばかりであり、多少の不安を覚えたことは記憶に鮮明です。
+            </p>
 
-                    <h2>こだわった点・工夫した点</h2>
-                    <ul>
-                        <li><strong>見出し1：</strong> 具体的にどんな技術的工夫、プランニングの工夫をしたか。</li>
-                        <li><strong>見出し2：</strong> ユーザー目線で配慮した点や、UI/UXの改善。</li>
-                        <li><strong>見出し3：</strong> チーム開発でコミュニティや円滑な進行のために貢献したこと。</li>
-                    </ul>
+            <h2>工夫した点・気付き</h2>
+            <ul>
+              <li>
+                <strong>子どもたちは「争い」を好む</strong>
+                <p>
+                  開催1日目は、既存のボードゲームを遊んでインプットする時間でした。<br />
+                  学生ファシリテーター6人はそれぞれいくつかのゲームの進行を担当しましたが、私の担当であった「協力型ゲーム」には子どもたちが興味を示してくれず、親御さんに「やってみない？」と言われて参加するパターンが多かったです。<br />
+                  1日目の終わりに子どもたちにゲームの感想を聞いたところ、「○○で勝てて楽しかった！」「負けたからもう一回やりたくなった」という声が多く、「みんなで一緒に1つのことを成し遂げる喜び」よりも「誰かに勝つことの喜び」を子どもたちは好むのだなと感じました。
+                </p>
+              </li>
+              <li>
+                <strong>子どもたちの創造性を邪魔しない</strong>
+                <p>
+                  2日目は、ゲームデザイナーの方にお越しいただき、チームに分かれて子どもたちのアイデアをもとにボードゲームを作る時間でした。<br />
+                  私たちのチームは、プランニングがなかなか進まない中で、1人が「この部屋、机の形が面白いね」と言ったことをきっかけに、机の形を活かしたアクションゲームを作ることになりました。<br />
+                  当初、出来上がったゲームは可能なら配布すると聞いていたので、もしかしてダメなのではないかと思い、万が一のために別のアイデアを用意することも考えました。<br />
+                  しかし、ゲームデザイナーの方が「これは面白いし、他所ではできないゲームだから大丈夫」と言ってくださったことをきっかけに、今のアイデアを信じてより良くする方向に走ることが出来ました。<br />
+                  結果的にやはりリリースは出来ず、制作ゲームの公開ページでもプレイ動画の投稿に留まりましたが、現場でそれなりに良い評価を得られていたため、子どもたちの創造性を邪魔しないことの大切さに気付きました。
+                </p>
+              </li>
+            </ul>
 
-                    <div class="sub-images">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=工夫した部分のスクショ" alt="補足画像">
-                        <img src="https://placehold.jp/169/cccccc/333333/400x225.png?text=コード等のスクショ" alt="補足画像">
-                    </div>
-
-                    <h2>振り返り・学び</h2>
-                    <p>この開発を通じて得られた技術的・人間的な学びや、次に活かしたいことを書きます。</p>
-                </div>
-
-            </article>
-        </main>
+            <h2>振り返り・学び</h2>
+            <p>
+              子どもならではの独創性や発想力にじかに触れることができ、非常に貴重な経験となりました。<br />
+              将来子どもを持つようになったり、子ども向けのコンテンツを作るようになったとしても、私は子どもの創造性を加速させてあげられるような大人でありたいと強く思うようになりました。
+            </p>
+          </div>
+        </article>
+      </main>
     </div>
-
-</body>
+  </body>
 </html>
